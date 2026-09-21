@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Shine — Car Detailing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Auto Shine home">
+      <span class="logo-symbol">⌁</span>
+      <span>AUTO <b>SHINE</b><small>CAR DETAILING</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#gallery" data-i18n="navGallery">Gallery</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="language-picker">
+        <button class="language-button" id="languageButton">EN ▾</button>
+        <div class="language-menu" id="languageMenu">
+          <button data-lang="kk">Қазақша</button>
+          <button data-lang="ru">Русский</button>
+          <button data-lang="en">English</button>
+        </div>
+      </div>
+      <a class="btn btn-small" href="#contact" data-i18n="bookNow">Book Now ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">PREMIUM CAR DETAILING</p>
+        <h1 data-i18n="heroTitle">Make Your Car<br><span>Look Brand New</span></h1>
+        <p class="hero-text" data-i18n="heroText">
+          Professional car detailing that brings back the clean look, deep shine,
+          and feeling of a fresh car.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn" href="#contact" data-i18n="heroButton">Book an Appointment ↗</a>
+          <a class="btn btn-outline" href="#services" data-i18n="servicesButton">Explore Services</a>
+        </div>
+      </div>
+      <div class="scroll-hint">↓ <span data-i18n="scroll">Scroll Down</span></div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="servicesEyebrow">WHAT WE DO</p>
+        <h2 data-i18n="servicesTitle">Care for Every <span>Detail</span></h2>
+        <p class="section-intro" data-i18n="servicesIntro">Simple, honest detailing services for drivers who care about their car.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-image exterior"></div>
+          <div class="service-icon">🚘</div>
+          <h3 data-i18n="service1Title">Exterior Wash</h3>
+          <p data-i18n="service1Text">A careful exterior clean that removes road dirt and leaves a fresh finish.</p>
+          <a href="#contact" data-i18n="learnMore">Learn More →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-image interior"></div>
+          <div class="service-icon">💺</div>
+          <h3 data-i18n="service2Title">Interior Detailing</h3>
+          <p data-i18n="service2Text">Deep cleaning for seats, carpets, dashboard, and all the small details.</p>
+          <a href="#contact" data-i18n="learnMore">Learn More →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-image polish"></div>
+          <div class="service-icon">✨</div>
+          <h3 data-i18n="service3Title">Paint Correction</h3>
+          <p data-i18n="service3Text">Polishing that helps reduce swirl marks and brings back the paint's gloss.</p>
+          <a href="#contact" data-i18n="learnMore">Learn More →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-image ceramic"></div>
+          <div class="service-icon">🛡️</div>
+          <h3 data-i18n="service4Title">Ceramic Coating</h3>
+          <p data-i18n="service4Text">Extra protection, easier maintenance, and a deep glossy finish.</p>
+          <a href="#contact" data-i18n="learnMore">Learn More →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image reveal"></div>
+      <div class="about-content reveal">
+        <p class="eyebrow" data-i18n="aboutEyebrow">WHY AUTO SHINE</p>
+        <h2 data-i18n="aboutTitle">Good Work. <span>No Shortcuts.</span></h2>
+        <p class="about-intro" data-i18n="aboutIntro">We treat every vehicle with patience and attention. No rushed work, no unnecessary extras — just a clean result you can see.</p>
+        <div class="features">
+          <div><strong>01</strong><div><h3 data-i18n="feature1Title">Careful Work</h3><p data-i18n="feature1Text">Every surface gets the attention it needs.</p></div></div>
+          <div><strong>02</strong><div><h3 data-i18n="feature2Title">Quality Products</h3><p data-i18n="feature2Text">Reliable products selected for your vehicle.</p></div></div>
+          <div><strong>03</strong><div><h3 data-i18n="feature3Title">Clear Pricing</h3><p data-i18n="feature3Text">Straightforward services without surprises.</p></div></div>
+          <div><strong>04</strong><div><h3 data-i18n="feature4Title">Respect for Your Car</h3><p data-i18n="feature4Text">Your car leaves looking and feeling refreshed.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="galleryEyebrow">A LITTLE INSPIRATION</p>
+        <h2 data-i18n="galleryTitle">Clean Cars. <span>Real Shine.</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g1 reveal"></div>
+        <div class="gallery-item g2 reveal"></div>
+        <div class="gallery-item g3 reveal"></div>
+      </div>
+    </section>
+
+    <section class="booking section reveal" id="contact">
+      <div>
+        <p class="eyebrow" data-i18n="contactEyebrow">LET'S GET YOUR CAR READY</p>
+        <h2 data-i18n="contactTitle">Your Car Deserves<br><span>Some Attention.</span></h2>
+        <p data-i18n="contactText">Tell us what your car needs. We'll get back to you to confirm the details.</p>
+      </div>
+      <form id="bookingForm">
+        <input type="text" data-i18n-placeholder="namePlaceholder" placeholder="Your name" required>
+        <input type="tel" data-i18n-placeholder="phonePlaceholder" placeholder="Phone number" required>
+        <select required>
+          <option value="" data-i18n="chooseService">Choose a service</option>
+          <option data-i18n="service1Title">Exterior Wash</option>
+          <option data-i18n="service2Title">Interior Detailing</option>
+          <option data-i18n="service3Title">Paint Correction</option>
+          <option data-i18n="service4Title">Ceramic Coating</option>
+        </select>
+        <button class="btn" type="submit" data-i18n="requestBooking">Request Booking →</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">AUTO <b>SHINE</b><small>CAR DETAILING</small></div>
+    <p data-i18n="footer">© 2026 Auto Shine. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
